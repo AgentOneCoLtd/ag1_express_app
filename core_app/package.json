@@ -1,0 +1,59 @@
+{
+  "name": "@workspace/core_app",
+  "version": "0.1.0",
+  "author": "agent one co., ltd.",
+  "private": true,
+  "main": "./lib/app.js",
+  "typings": "./lib/app.d.ts",
+  "scripts": {
+    "tsc:onlyts": "tsc -b tsconfig-onlyts.json",
+    "tsc:spects": "tsc -b tsconfig-spects.json",
+    "compile": "yarn tsc:onlyts && yarn tsc:spects",
+    "lint": "eslint --ext .ts ./src --fix",
+    "prettier:config": "prettier --no-config --write \"./*.{json,yml}\"",
+    "prettier:ts": "prettier --write \"./src/**/*.ts\"",
+    "prettier": "yarn prettier:config --loglevel warn && yarn prettier:ts --loglevel warn",
+    "test": "jest --passWithNoTests",
+    "build": "yarn prettier && yarn lint && yarn compile && yarn test"
+  },
+  "dependencies": {
+    "@ag1/nil": "^1.1.0",
+    "@ag1/return_switch": "^1.1.0",
+    "@hapi/boom": "^8.0.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^3.21.1",
+    "http-status": "^1.4.0",
+    "morgan": "^1.9.1",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-typescript": "^7.6.0",
+    "@types/body-parser": "^1.17.1",
+    "@types/cors": "^2.8.6",
+    "@types/express": "^4.17.1",
+    "@types/express-serve-static-core": "^4.16.10",
+    "@types/helmet": "^0.0.44",
+    "@types/http-status": "^0.2.30",
+    "@types/jest": "^24.0.19",
+    "@types/morgan": "^1.7.37",
+    "@types/node": "^10",
+    "@typescript-eslint/eslint-plugin": "^2.4.0",
+    "@typescript-eslint/parser": "^2.4.0",
+    "eslint": "^6.5.1",
+    "eslint-config-prettier": "^6.4.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "jest": "^24.9.0",
+    "prettier": "^1.18.2",
+    "ts-jest": "^24.1.0",
+    "typescript": "^3.6.4"
+  },
+  "files": [
+    "custom_types",
+    "lib",
+    "src"
+  ]
+}

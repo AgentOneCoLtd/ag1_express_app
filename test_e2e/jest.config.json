@@ -1,0 +1,10 @@
+{
+  "preset": "ts-jest",
+  "testMatch": ["**/*.spec.+(ts)"],
+  "globals": {
+    "ts-jest": {
+      "diagnostics": false,
+      "tsConfig": "tsconfig.json"
+    }
+  }
+}
