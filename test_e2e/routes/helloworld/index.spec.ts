@@ -8,9 +8,7 @@ afterAll((done) => {
 });
 
 it('should return greeting message', async () => {
-    const response = await supertest(app)
-        .get('/api/helloworld')
-        .expect(200);
+    const response = await supertest(app).get('/api/helloworld').expect(200);
 
     const { message } = response.body;
 

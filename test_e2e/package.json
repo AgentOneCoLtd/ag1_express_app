@@ -15,23 +15,23 @@
   "dependencies": {
     "@workspace/core_app": "0.1.0",
     "dotenv": "^8.2.0",
-    "jest": "^24.9.0",
+    "jest": "^25.2.4",
     "supertest": "^4.0.2",
-    "ts-jest": "^24.1.0"
+    "ts-jest": "^25.3.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.6.4",
-    "@babel/preset-env": "^7.6.3",
-    "@babel/preset-typescript": "^7.6.0",
-    "@types/jest": "^24.0.19",
-    "@types/node": "^10",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-typescript": "^7.9.0",
+    "@types/jest": "^25.1.4",
+    "@types/node": "12",
     "@types/supertest": "^2.0.8",
-    "@typescript-eslint/eslint-plugin": "^2.4.0",
-    "@typescript-eslint/parser": "^2.4.0",
-    "eslint": "^6.5.1",
-    "eslint-config-prettier": "^6.4.0",
-    "eslint-plugin-prettier": "^3.1.1",
-    "prettier": "^1.18.2",
-    "typescript": "^3.6.4"
+    "@typescript-eslint/eslint-plugin": "^2.26.0",
+    "@typescript-eslint/parser": "^2.26.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^2.0.2",
+    "typescript": "^3.8.3"
   }
 }
