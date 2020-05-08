@@ -6,5 +6,5 @@ AG1's express app starter template
 
 # after clone
 ```bash
-yarn install
+yarn install --frozen-lockfile
 ```
