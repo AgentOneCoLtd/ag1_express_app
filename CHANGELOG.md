@@ -1,3 +1,6 @@
+## v0.2.2
+* add @types/express
+
 ## v0.2.1
 * increase node env version
 * upgrade libs
