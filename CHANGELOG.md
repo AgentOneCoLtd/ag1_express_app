@@ -1,5 +1,12 @@
+## v0.2.1
+* increase node env version
+* upgrade libs
+* use custom @types/express-serve-static-core
+* add common utils from main project
+* provide an example to write safer type inferred request
+
 ## v0.2.0
-* change node version to 12
+* change node env version to 12
 * upgrade libs
 
 ## v0.1.0
