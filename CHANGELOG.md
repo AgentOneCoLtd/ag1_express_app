@@ -1,3 +1,6 @@
+## v0.2.3
+* add example of params inferred type
+
 ## v0.2.2
 * add @types/express
 
