@@ -1,5 +1,5 @@
-import { RequestHandler } from 'express-serve-static-core';
+import { RequestHandler } from 'express';
+import { xCheckReqQuery } from './x_check_req_query';
+import { xGreet } from './x_greet';
 
-export const greet: RequestHandler = (_req, res, _next) => {
-    res.json({ message: `hello, ${process.env.NODE_ENV} world` });
-};
+export const greet: RequestHandler[] = [xCheckReqQuery, xGreet];
