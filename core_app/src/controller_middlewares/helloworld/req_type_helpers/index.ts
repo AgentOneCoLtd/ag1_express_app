@@ -4,6 +4,7 @@ import Joi from '@hapi/joi';
 import { isNil } from '@ag1/nil';
 import { middlewareIncorrectOrder } from '../../../utils/error';
 
+// query
 export interface IReqQuery extends Query {
     lang?: string;
 }
@@ -18,6 +19,7 @@ export function isIReqQuery(query: Query): query is IReqQuery {
     return isNil(reqQuerySchema.validate(query).error);
 }
 
+// xGreet
 export interface IXGreetReq extends Request {
     query: IReqQuery;
 }
