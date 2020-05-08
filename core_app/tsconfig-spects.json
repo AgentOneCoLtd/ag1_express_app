@@ -3,6 +3,6 @@
   "compilerOptions": {
     "noEmit": true
   },
-  "include": ["../custom_types/*.d.ts", "./src/**/*.spec.ts"],
+  "include": ["./src/**/*.spec.ts"],
   "references": [{ "path": "./tsconfig-onlyts.json" }]
 }

@@ -11,5 +11,5 @@
     "strict": true,
     "noEmit": true
   },
-  "include": ["../custom_types/*.d.ts", "routes/**/*.spec.ts"]
+  "include": ["routes/**/*.spec.ts"]
 }
