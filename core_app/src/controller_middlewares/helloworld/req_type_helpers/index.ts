@@ -5,9 +5,9 @@ import { isNil } from '@ag1/nil';
 import { middlewareIncorrectOrder } from '../../../utils/error';
 
 // query
-export interface IReqQuery extends Query {
+export type ReqQuery = Query & {
     lang?: string;
-}
+};
 
 export const reqQuerySchemaMap: Joi.SchemaMap = {
     lang: Joi.string().valid('th', 'en'),
@@ -15,17 +15,17 @@ export const reqQuerySchemaMap: Joi.SchemaMap = {
 
 export const reqQuerySchema: Joi.ObjectSchema = Joi.object().keys(reqQuerySchemaMap).required();
 
-export function isIReqQuery(query: Query): query is IReqQuery {
+export function isReqQuery(query: Query): query is ReqQuery {
     return isNil(reqQuerySchema.validate(query).error);
 }
 
 // xGreet
 export interface IXGreetReq extends Request {
-    query: IReqQuery;
+    query: ReqQuery;
 }
 
 export function isIXGreetReq(req: Request): req is IXGreetReq {
-    if (isIReqQuery(req.query)) {
+    if (isReqQuery(req.query)) {
         return true;
     }
 
